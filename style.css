@@ -1,0 +1,31 @@
+:root {  
+--very-dark-Grayish-blue: hsl(217, 19%, 35%);
+--desaturated-dark-blue: hsl(214, 17%, 51%);
+--grayish-blue: hsl(212, 23%, 69%);
+--light-grayish-blue: hsl(210, 46%, 95%);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--light-grayish-blue);
+    padding: 100px 30px;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 13px
+}
+
+.container {
+    background-color: #fff;
+}
