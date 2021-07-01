@@ -53,16 +53,23 @@ p {
 }
 
 .container .avatar .open-share{
-   /* display: none; */
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--very-dark-Grayish-blue);
     position: absolute;
     width: calc(100% + 60px);
+    height: 0px;
+    overflow: hidden;
     left: -30px;
     bottom: -30px;
     border-radius: 0 0 20px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.container .avatar .open-share.clicked {
+    height: 80px;
+    overflow: auto;
 }
 
 .container .avatar .open-share div{
@@ -74,8 +81,23 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    color: var(--grayish-blue);
 
 }
+
+.container .avatar .open-share > div:first-child ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container .avatar .open-share > div:first-child ul li {
+    margin: 0 10px;
+}
+    
+
 
 .container .description p {
     color: var(--desaturated-dark-blue);
