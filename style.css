@@ -68,13 +68,16 @@ p {
 }
 
 .container .avatar .open-share.clicked {
-    height: 80px;
+    height: 90px;
     overflow: auto;
 }
 
 .container .avatar .open-share div{
-
     padding: 5px 30px;
+}
+
+.container .avatar .open-share #remove-share {
+    cursor: pointer;
 }
 
 .container .avatar .open-share > div:first-child{
