@@ -5,7 +5,7 @@ const shareBtn = document.getElementById("share")
 const removeShareBtn = document.querySelector("#remove-share")
 
 shareBtn.addEventListener("click", () => {
-    socials.classList.add("clicked")
+    socials.classList.toggle("clicked")
 })
 
 
